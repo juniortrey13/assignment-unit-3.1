@@ -40,6 +40,8 @@ console.log('First animal is', firstAnimal);
 //      Be sure to console.log this new variable to make sure your code
 //      worked as expected.
 
+let secondAnimal = animalArray[1];
+console.log( "The second animal in the zoo exhibit is:", secondAnimal);
 
 // 3.b. TODO: Create a variable `lastAnimal` and assign it the value of
 //      the "last" item in `animalArray`, using its array index.
@@ -50,7 +52,12 @@ console.log('First animal is', firstAnimal);
 // 3.c. (STRETCH) TODO: Refactor 3.b to use the `animalArray` variable's .length 
 //       property, rather than the exact (hardcoded) index number of the last item.
 
+let lastAnimal = animalArray[3];
+console.log( 'Our list of animals:', animalArray);
+console.log( 'The last animal in our list:', lastAnimal);
 
+lastAnimal = animalArray[animalArray.length - 1 ]; //used .length to get the last item in the array
+console.log( 'Last animal on our list picked through a different method:', lastAnimal );
 
 // Adding & Removing Array Items
 console.log('--- 4. Adding and removing array items ---');
@@ -71,6 +78,10 @@ let animalToUnshift = 'walrus';
 animalArray.unshift(animalToUnshift);
 console.log(`Added an animal to beginning: ${animalArray}`);
 
+let dessert = 'Cheesecake';
+favoriteFoods.push(dessert);
+console.log( 'My favorite dessert added to the end of my favorite foods is:', favoriteFoods);
+
 // 4.b. TODO: Create a variable `entree` and assign it a string value of
 //      an entree that you enjoy.
 //      Add the `entree` to the beginning of your `favoriteFoods` array.
@@ -80,6 +91,10 @@ console.log(`Added an animal to beginning: ${animalArray}`);
 let removedAnimal = animalArray.pop();
 console.log('Removed the last animal', removedAnimal);
 console.log('The animals are now', animalArray);
+
+let entree = 'Stuffed Mushrooms';
+favoriteFoods.unshift(entree);
+console.log( 'I actually like starting my meal with:', entree);
 
 // NOTE: Use the `colors` array for 4.c and 4.d.
 let colors = ['orange', 'yellow', 'green', 'teal'];
@@ -97,11 +112,18 @@ removedAnimal = animalArray.shift();
 console.log('Removed the first animal', removedAnimal);
 console.log('The animals are now', animalArray);
 
+let lastColor = colors.pop();
+console.log( 'Our updated color list available at the store:', colors );
+console.log( 'Our sold out color at the store:', lastColor );
+
+
 // 4.d. TODO: Remove the first value from the `colors` array and store it
 //      inside a new variable called `firstColor`.
 //      To verify that your code worked, console.log `firstColor`!  
 
-
+let firstColor = colors.shift();
+console.log( 'Our updated color list available at the store:', colors );
+console.log( 'Our color that will be restocked soon at the store is:', firstColor );
 
 
 // STRETCH GOALS:
