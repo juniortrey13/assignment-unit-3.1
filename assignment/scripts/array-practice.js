@@ -133,10 +133,14 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 // 5.a (STRETCH) TODO: Replace the second gem with 'Tourmaline'.
 //      Remember to console.log the updated array.
 
+gems[1] = 'Tourmaline' //I am replacing the second gem at index 1 because topaz even though is the first is started of at 0
+console.log( "Our new available gems to purchase:", gems);
 
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
 
+gems.sort().reverse(); // Got this anwser from someone asking the same kind of question on freeCodeCamp
+console.log( "Our gems in reverse alphabetical order:", gems);
 
 // 5.c (STRETCH) TODO: Create a variable `gemString` and assign it a string value
 //     that's made up of each value from the `gems` array, but separated by the
@@ -153,7 +157,8 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 //       ['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond', 'yellow', 'green']
 //     Now, console.log the new array.
 
-
+let colorfulGems = gems.concat(colors);
+console.log( "Here is our selection of gems and available colors:", colorfulGems);
 
 
 // DO NOT MODIFY
